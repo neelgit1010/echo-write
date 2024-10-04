@@ -3,7 +3,11 @@ import logo from "../imgs/logo.png";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [searchVisibility, setSearchVisibility] = useState(false);
+  // const [searchVisibility, setSearchVisibility] = useState(false);
+
+  const handleSearch = () => {
+    setSearchVisibility(!searchVisibility);
+  };
 
   return (
     <>
